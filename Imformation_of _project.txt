@@ -1,0 +1,24 @@
+Demo Data For validation:--
+
+{
+  "Id": 1,
+  "FirstName": "Rahul",
+  "LastName": "Sharma",
+  "Email": "sharma@example.com",
+  "MobileNumber": "9876543210",
+  "PANNumber": "ABCDE1234F",
+  "PassportNumber": "A1B2C3D4E",
+  "DateOfBirth": "1995-08-15",
+  "DateOfJoining": "2020-05-10",
+  "Country": "India",
+  "State": "Maharashtra",
+  "City": "Pune",
+  "ProfileImage": "/Uploads/Employee/rahul_sharma.jpg",
+  "Gender": "Male",
+  "IsActive": true
+}
+
+
+ASP.NET Core MVC application with ADO.NET and N-Tier architecture
+=> these technology use in my project  
+

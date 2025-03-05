@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|d:\\need folder data\\task\\dotnettask\\mindtech\\neosoft_sonal_wadhavane_03-03-2025\\employeemanagement\\employeemanagementrazor\\pages\\employees\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|solutionrelative:employeemanagementrazor\\pages\\employees\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|d:\\need folder data\\task\\dotnettask\\mindtech\\neosoft_sonal_wadhavane_03-03-2025\\employeemanagement\\employeemanagementrazor\\pages\\employees\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|solutionrelative:employeemanagementrazor\\pages\\employees\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6589D3F7-535D-4EF4-ADE8-48DE7E2BB2E2}|EmployeeManagementAPI\\EmployeeManagementAPI.csproj|d:\\need folder data\\task\\dotnettask\\mindtech\\neosoft_sonal_wadhavane_03-03-2025\\employeemanagement\\employeemanagementapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6589D3F7-535D-4EF4-ADE8-48DE7E2BB2E2}|EmployeeManagementAPI\\EmployeeManagementAPI.csproj|solutionrelative:employeemanagementapi\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6589D3F7-535D-4EF4-ADE8-48DE7E2BB2E2}|EmployeeManagementAPI\\EmployeeManagementAPI.csproj|d:\\need folder data\\task\\dotnettask\\mindtech\\neosoft_sonal_wadhavane_03-03-2025\\employeemanagement\\employeemanagementapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6589D3F7-535D-4EF4-ADE8-48DE7E2BB2E2}|EmployeeManagementAPI\\EmployeeManagementAPI.csproj|solutionrelative:employeemanagementapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|d:\\need folder data\\task\\dotnettask\\mindtech\\neosoft_sonal_wadhavane_03-03-2025\\employeemanagement\\employeemanagementrazor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|solutionrelative:employeemanagementrazor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|d:\\need folder data\\task\\dotnettask\\mindtech\\neosoft_sonal_wadhavane_03-03-2025\\employeemanagement\\employeemanagementrazor\\pages\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9A7DCC4-10F8-4459-8B3C-A8535F3B2F32}|EmployeeManagementRazor\\EmployeeManagementRazor.csproj|solutionrelative:employeemanagementrazor\\pages\\employees\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementAPI\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementAPI\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementAPI\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeManagementAPI\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAYwI8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T09:26:57.145Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml.cs",
+              "ToolTip": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml.cs",
+              "RelativeToolTip": "EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T10:52:24.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\Pages\\Employees\\Index.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementRazor\\Pages\\Employees\\Index.cshtml",
+              "ToolTip": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\Pages\\Employees\\Index.cshtml",
+              "RelativeToolTip": "EmployeeManagementRazor\\Pages\\Employees\\Index.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAUwD8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T09:36:53.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml",
+              "RelativeDocumentMoniker": "EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml",
+              "ToolTip": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml",
+              "RelativeToolTip": "EmployeeManagementRazor\\Pages\\Employees\\Create.cshtml",
+              "ViewState": "AgIAAEABAAAAAAAAAAAIwEYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-05T09:12:53.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementAPI\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementAPI\\Models\\Employee.cs",
+              "ToolTip": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementAPI\\Models\\Employee.cs",
+              "RelativeToolTip": "EmployeeManagementAPI\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T09:12:14.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeManagementRazor\\appsettings.json",
+              "ToolTip": "D:\\Need Folder Data\\Task\\Dotnettask\\MindTech\\Neosoft_Sonal_Wadhavane_03-03-2025\\EmployeeManagement\\EmployeeManagementRazor\\appsettings.json",
+              "RelativeToolTip": "EmployeeManagementRazor\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-05T09:11:25.139Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+﻿@page
+@model CreateModel
+@{
+    ViewData["Title"] = "Insert Update Employee Form";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        form {
+            width: 350px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .profile-upload {
+            display: block;
+            padding: 5px;
+            background: #ccc;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn-save {
+            background: green;
+            color: white;
+            font-size: 18px;
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .btn-save:hover {
+            background: darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2><u>Insert Update Employee Form</u></h2>
+
+    <form id="employeeForm">
+        <div class="form-group">
+            <label>First Name</label>
+            <input id="firstName" required />
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label>
+            <input id="lastName" required />
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input id="email" type="email" required />
+        </div>
+
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input id="mobileNumber" required />
+        </div>
+
+        <div class="form-group">
+            <label>PAN Number</label>
+            <input id="panNumber" required />
+        </div>
+
+        <div class="form-group">
+            <label>Passport Number</label>
+            <input id="passportNumber" required />
+        </div>
+
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input id="dateOfBirth" type="date" required />
+        </div>
+
+        <div class="form-group">
+            <label>Date of Joining</label>
+            <input id="dateOfJoining" type="date" required />
+        </div>
+
+        <div class="form-group">
+            <label for="countryDropdown">Select Country:</label>
+            <select id="countryDropdown" name="countryDropdown" class="form-control">
+                <option value="">-- Select Country --</option>
+                @foreach (var country in Model.Countries)
+                {
+                    <option value="@country.Id">@country.Name</option>
+                }
+            </select>
+        </div>
+
+
+        <!-- State Dropdown (will load dynamically) -->
+        @* <div class="form-group">
+            <label for="stateDropdown">Select State:</label>
+            <select id="stateDropdown" name="stateDropdown" class="form-control" disabled>
+                <option value="">-- Select State --</option>
+            </select>
+        </div>
+
+        <!-- City Dropdown (will load dynamically) -->
+        <div class="form-group">
+            <label for="cityDropdown">Select City:</label>
+            <select id="cityDropdown" name="cityDropdown" class="form-control" disabled>
+                <option value="">-- Select City --</option>
+            </select>
+        </div> *@
+        <!-- State Dropdown (loaded dynamically) -->
+        <div class="form-group">
+            <label for="stateDropdown">Select State:</label>
+            <select id="stateDropdown" name="stateDropdown" class="form-control" disabled>
+                <option value="">-- Select State --</option>
+            </select>
+        </div>
+        <!-- City Dropdown (loaded dynamically) -->
+        <div class="form-group">
+            <label for="cityDropdown">Select City:</label>
+            <select id="cityDropdown" name="cityDropdown" class="form-control" disabled>
+                <option value="">-- Select City --</option>
+            </select>
+        </div>
+
+        @*  <div class="form-group">
+             <label>Country</label>
+             <select id="country" required>
+                 <option>Select Country</option>
+             </select>
+         </div> *@
+        <!-- Country Dropdown -->
+        <!-- Country Dropdown -->
+        @* <label for="countryDropdown">Select Country:</label>
+        <select id="countryDropdown" name="countryDropdown" class="form-control">
+            <option value="">-- Select Country --</option>
+            @foreach (var country in Model.Countries)
+            {
+                <option value="@country.Id">@country.Name</option>
+            }
+        </select> *@
+
+
+         @* <div class="form-group">
+             <label>State</label>
+             <select id="state" required>
+                 <option>Select State</option>
+             </select>
+         </div>
+
+         <div class="form-group">
+             <label>City</label>
+             <select id="city" required>
+                 <option>Select City</option>
+             </select>
+         </div> *@
+
+       
+
+         @* <div class="form-group">
+             <label>Profile Picture</label>
+             <input id="profilePicture" type="file" class="profile-upload" />
+         </div> *@
+
+        <div class="form-group">
+        <label asp-for="ProfileImage">Profile Picture</label>
+        <input type="file" id="profilePicture" name="ProfileImage" accept="image/*" />
+        <span asp-validation-for="ProfileImage" class="text-danger"></span>
+    </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <div class="form-group">
+            <label>Active</label>
+            <input type="checkbox" id="isActive"> Active
+        </div>
+
+        <button type="button" id="btnSave" class="btn-save">Save</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        
+        
+        
+            $(document).ready(function () {
+                // Handle Country Dropdown Change Event
+                $("#countryDropdown").change(function () {
+                    var countryId = $(this).val();
+                    console.log("Selected Country ID:", countryId);
+
+                    if (countryId) {
+                        $("#stateDropdown").html('<option value="">Loading...</option>').prop("disabled", false);
+                        $("#cityDropdown").html('<option value="">-- Select City --</option>').prop("disabled", true);
+
+                        $.ajax({
+                            url: "https://localhost:7277/api/State/GetStates/" + countryId,
+                            type: "GET",
+                            dataType: "json",
+                            success: function (response) {
+                                var options = '<option value="">-- Select State --</option>';
+                                $.each(response, function (index, state) {
+                                    options += '<option value="' + state.row_Id + '">' + state.stateName + '</option>';
+                                });
+
+                                $("#stateDropdown").html(options).prop("disabled", false);
+                            },
+                            error: function () {
+                                alert("Error loading states.");
+                                $("#stateDropdown").html('<option value="">-- Select State --</option>').prop("disabled", false);
+                            }
+                        });
+                    } else {
+                        $("#stateDropdown, #cityDropdown").html('<option value="">-- Select --</option>').prop("disabled", false);
+                    }
+                });
+
+            // Handle State Dropdown Change Event
+            $("#stateDropdown").change(function () {
+                    var stateId = $(this).val();
+            console.log("Selected State ID:", stateId);
+
+            if (stateId) {
+                $("#cityDropdown").html('<option value="">Loading...</option>').prop("disabled", false);
+
+            $.ajax({
+                url: "https://localhost:7277/api/City/GetCities/" + stateId,
+            type: "GET",
+            dataType: "json",
+            success: function (response) {
+                                var options = '<option value="">-- Select City --</option>';
+            $.each(response, function (index, city) {
+                options += '<option value="' + city.row_Id + '">' + city.cityName + '</option>';
+                                });
+
+            $("#cityDropdown").html(options).prop("disabled", false);
+                            },
+            error: function () {
+                alert("Error loading cities.");
+            $("#cityDropdown").html('<option value="">-- Select City --</option>').prop("disabled", false);
+                            }
+                        });
+                    } else {
+                $("#cityDropdown").html('<option value="">-- Select City --</option>').prop("disabled", false);
+                    }
+                });
+            });
+
+
+
+        $(document).ready(function () {
+            $("#btnSave").click(function (event) {
+                event.preventDefault(); // Prevent default form submission
+
+                var formData = new FormData(); // Use FormData to handle file upload
+
+                // // var fileInput = $("#profilePicture")[0].files[0];
+                // // if (!fileInput) {
+                // //     alert("Please upload a profile image.");
+                // //     return;
+                // // }
+                // // formData.append("ProfileImage", fileInput); Append file
+
+                
+                formData.append("firstName", $("#firstName").val().trim());
+                formData.append("lastName", $("#lastName").val().trim());
+                formData.append("email", $("#email").val().trim());
+                formData.append("mobileNumber", $("#mobileNumber").val().trim());
+                formData.append("panNumber", $("#panNumber").val().trim());
+                formData.append("passportNumber", $("#passportNumber").val().trim());
+                formData.append("dateOfBirth", $("#dateOfBirth").val()); // Must be YYYY-MM-DD
+                formData.append("dateOfJoining", $("#dateOfJoining").val()); // Must be YYYY-MM-DD
+                formData.append("country", $("#countryDropdown").val()); // Ensure dropdowns have values
+                formData.append("state", $("#stateDropdown").val());
+                formData.append("city", $("#cityDropdown").val());
+                formData.append("file", $("#profilePicture")[0].files[0]);  // Correct ID
+
+                formData.append("gender", $("input[name='gender']:checked").val()); // Male/Female
+                formData.append("isActive", $("#isActive").prop("checked"));
+
+                console.log("Sending Data:", formData); // Debugging
+
+                $.ajax({
+                    url: "https://localhost:7277/api/Employee/upload/1",
+                    type: "POST",
+                    data: formData, // Use FormData
+                    processData: false, // Prevent jQuery from processing data
+                    contentType: false, // Prevent jQuery from setting content-type
+                    success: function (response) {
+                        console.log("File uploaded successfully: ", response);
+                        alert("Employee saved successfully!");
+                        window.location.href = "/Employees/Index"; // Redirect after save
+                    },
+                    error: function (xhr) {
+                        console.error("Upload failed: ", error);
+                        console.error("Error:", xhr.responseText);
+                        alert("Error saving employee. Check console for details.");
+                    }
+                });
+            });
+        });
+
+         
+//         $(document).ready(function () {
+//     $("#btnSave").click(function (event) {
+//         event.preventDefault(); Prevent default form submission
+//                var fileInput = $("#profilePicture")[0].files[0];
+//         var profileImage = $("#profilePicture").val();
+//             if (!profileImage) {
+//                 alert("Please upload a profile image.");
+//                 e.preventDefault(); Prevent form submission
+//             }
+
+//         var employeeData = {
+//             firstName: $("#firstName").val().trim(),
+//             lastName: $("#lastName").val().trim(),
+//             email: $("#email").val().trim(),
+//             mobileNumber: $("#mobileNumber").val().trim(),
+//             panNumber: $("#panNumber").val().trim(),
+//             passportNumber: $("#passportNumber").val().trim(),
+//             dateOfBirth: $("#dateOfBirth").val(), Must be YYYY-MM-DD
+//             dateOfJoining: $("#dateOfJoining").val(), Must be YYYY-MM-DD
+//             country: $("#countryDropdown").val(), Ensure dropdowns have values
+//             state: $("#stateDropdown").val(),
+//             city: $("#cityDropdown").val(),
+//             gender: $("input[name='gender']:checked").val(), Male/Female
+//             isActive: $("#isActive").prop("checked"),
+//             profileImage: $("#profileImage").val() // If applicable
+
+//                     Handle file upload properly
+//                     var fileInput = $("#profileImage")[0].files[0];
+//                     if(fileInput) {
+//                         formData.append("ProfileImage", fileInput);
+//                     } else {
+//                         alert("Please upload a profile image.");
+//                     return;
+//                     }
+//         };
+
+//         console.log("Sending Data:", employeeData); Debugging
+
+//         $.ajax({
+//             url: "https:localhost:7277/api/Employee",
+//             type: "POST",
+//             contentType: "application/json",
+//             data: JSON.stringify(employeeData),
+//             success: function (response) {
+//                 alert("Employee saved successfully!");
+//                 window.location.href = "/Employees/Index"; Redirect after save
+//             },
+//             error: function (xhr) {
+//                 console.error("Error:", xhr.responseText);
+//                 alert("Error saving employee. Check console for details.");
+//             }
+//         });
+//     });
+// });
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿@page
+@model EmployeeManagementRazor.Pages.Employees.IndexModel
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<h2><strong>Employee Listing Form</strong></h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>PAN No</th>
+            <th>Passport No</th>
+            <th>Gender</th>
+            <th>IsActive</th>
+            <th>Profile Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model.Employees)
+        {
+            <tr>
+                <td>@employee.Email</td>
+                <td>@employee.Country</td>
+                <td>@employee.State</td>
+                <td>@employee.City</td>
+                <td>@employee.PANNumber</td>
+                <td>@employee.PassportNumber</td> 
+                <td>@employee.Gender</td>
+                <td>@(employee.IsActive ? "Yes" : "No")</td>
+                <td>
+                    <img src="@employee.ProfileImage" alt="Profile" width="30" height="30" />
+                </td>
+                <td>
+                    <a href="/Employees/Edit?id=@employee.Id" class="btn btn-primary btn-sm">🖊 Edit</a>
+                    <a href="/Employees/Delete?id=@employee.Id" class="btn btn-danger btn-sm">❌ Del</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".delete-btn").click(function () {
+            var id = $(this).data("id");
+            if (confirm("Are you sure you want to delete this employee?")) {
+                $.ajax({
+                    url: `/api/Employee/${id}`,
+                    type: "DELETE",
+                    success: function () {
+                        alert("Employee deleted successfully.");
+                        location.reload();
+                    },
+                    error: function () {
+                        alert("Error deleting employee.");
+                    }
+                });
+            }
+        });
+    });
+</script>
